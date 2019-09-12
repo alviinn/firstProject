@@ -9,10 +9,32 @@
     <link rel="stylesheet" href="css/style.css">
     <script>
     </script>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
 </head>
 <body>
-	<br />
-    <p style='color:red'> Here is some red text. </p>
+	<ons-page>
+      <div style="text-align: center; margin-top: 200px">
+        <p>
+          <ons-input id="username" placeholder="Username" modifier="underbar">
+          </ons-input>
+        </p>
+        <p>
+         <ons-input
+          id="password"
+          placeholder="Password"
+          type="password"
+          modifier="underbar">
+        </ons-input>
+      </p>
+ 
+ 
+      <p>
+        <ons-button>Sign in</ons-button>
+      </p>
+    </div>
+  </ons-page>
 
 </body>
 </html>
